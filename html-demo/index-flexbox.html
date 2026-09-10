@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Demo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: row; /* Default */
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        /* height: 100vh; */
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        background-color: red;
+        color: white;
+        padding: 20px;
+        margin: 10px;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="container">Container 1</div>
+      <div class="container">Container 2</div>
+      <div class="container">Container 3</div>
+      <div class="container">Container 4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  --font-color: #1D1B20;
+  color: var(--font-color);
+  --button-color: #024D6B;
+  --background-header: #ffffffE5;
+  --card-background: #D0E0E7;
+  --card-font: #024D6B;
+  --card-focus-background: #024D6B;
+  --card-focus-font: #ffffff;
+
+}
+
+.header {
+  background-color: var(--background-header);
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 4px 4px 0px #00273740;
+  gap: 0.5rem;
+  padding: 0 1.5rem;
+}
+
+.header-logo {
+  margin-right: auto;
+}
+
+.header-button {
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: border-radius 0.2s ease-in-out;
+}
+
+.header-button > a, .header-button > button, a.header-button {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: var(--font-color);
+  background-color: transparent;
+  border: none;
+  font-size: 1rem; 
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: red;
+}
+
+.header-button:active {
+  border-radius: 8px;
+}
+
+.nav {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .nav {
+    display: flex;
+  }
+}
+
+.nav > ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 0.5rem;
+}
+
+.sub-menu {
+  display: none;
+}
+
+section {
+  height: 100dvh;
+}
+
+.hero {
+  position: relative;
+  margin-top: -7.5rem;
+  background-image: url("./images/heroSection.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 0%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero > * {
+  z-index: 1;
+}
+
+.hero > h1 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.hero > h1 > span {
+  font-weight: 700;
+  font-size: 3rem;
+  display: block; 
+}
+
+.hero > p {
+  font-size: 20px;
+  color: #fff;
+}
+

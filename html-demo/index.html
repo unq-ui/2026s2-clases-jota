@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <a class="header-logo" href="/" aria-label="Volver al inicio - Cuba Dental">
+        <picture>
+          <source srcset="./images/logo.webp" media="(min-width: 420px)" />
+          <img src="./images/logo-mini.webp" alt="Logo de Cuba Dental" />
+        </picture>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul>
+          <li class="header-button"><a href="#inicio">Inicio</a></li>
+          <li class="header-button"><a href="#sobreNosotros">Sobre nosotros</a></li>
+          <li class="header-button">
+            <button aria-expanded="false" aria-controls="submenu-especialidades">
+              Especialidades
+            </button>
+            <ul class="sub-menu" aria-label="Submenú de especialidades">
+              <li><a href="/implantes">Implantes</a></li>
+              <li><a href="/protesis">Prótesis</a></li>
+              <li><a href="/carillas">Carillas</a></li>
+              <li><a href="/alineadores">Alineadores</a></li>
+              <li><a href="/peridoncia">Periodoncia</a></li>
+              <li><a href="/endodoncia">Endodoncia</a></li>
+              <li><a href="/cirugía">Cirugía</a></li>
+              <li><a href="/ATM">ATM</a></li>
+            </ul>
+          </li>
+          <li class="header-button"><a href="#metodosDePago">Métodos de pago</a></li>
+          <li class="header-button"><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="header-button" href="https://wa.me/algo" class="btn-turno">Solicitá tu turno</a>
+    </header>
+    <main>
+      <section class="hero" id="inicio">
+        <h1><span>Diseñamos tu sonrisa</span> con la profesionalidad de la alta complejidad</h1>
+        <p>Implantes, prótesis y tratamientos integrales con planificación digital y tecnología Straumann®. Somos un equipo con
+        formación académica continua que documenta cada etapa de tu tratamiento, con total transparencia.</p>
+        <a href="#especialidades">Conocé nuestras especialidades</a>
+      </section>
+      <section id="sobreNosotros">
+        <div>
+          <h2>Cuba dental</h2>
+          <h3>Odontología integral</h3>
+          <p>CUBA DENTAL es un consultorio de odontología integral ubicado en Belgrano, CABA, especializado en rehabilitación oral de
+          alta complejidad. Nuestro trabajo se basa en el diagnóstico preciso, la planificación interdisciplinaria y la excelencia
+          en cada tratamiento.</p>
+          <a href="#contacto">¿Tenés una consulta? Contactanos</a>
+        </div>
+        <div>
+          <article>
+            <h3>Trabajos con criterio académico</h3>
+            <p>Nuestro equipo está formado por odontólogos con residencia universitaria en rehabilitación oral, posgrado en prótesis e
+            implantología y actividad docente en la Facultad de Odontología de la UBA. Cada decisión clínica se apoya en evidencia y
+            puede ser explicada y justificada ante el paciente.</p>
+          </article>
+          <article>
+            <h3>Nos formamos de manera continua</h3>
+            <p>La docencia universitaria y la actualización permanente son parte de nuestra práctica diaria, no un accesorio.
+            Incorporamos tecnología y protocolos cuando la evidencia respalda su beneficio clínico.</p>
+          </article>
+          <article>
+            <h3>Priorizamos el tiempo de consulta</h3>
+            <p>Atendemos una cantidad acotada de pacientes por día. Eso nos permite dedicar el tiempo real que cada caso requiere,
+            explicar alternativas, plazos y costos con transparencia, y sostener una relación de confianza en el tiempo.</p>
+          </article>
+          <article>
+            <h3>Planificamos antes de tratar</h3>
+            <p>Ningún tratamiento comienza sin diagnóstico completo, registros y un plan escrito. Contamos con escáner intraoral 3D,
+            diseño digital CAD, impresión 3D y laboratorio propio, lo que nos permite anticipar el resultado, reducir el margen de
+            error y acortar los tiempos de tratamiento.</p>
+          </article>
+          <article>
+            <h3>Documentamos cada caso</h3>
+            <p>Registramos fotográficamente todas las fases del tratamiento. El paciente tiene acceso a su propia documentación y puede
+            ver la evolución de su caso.</p>
+          </article>
+          <article>
+            <h3>Medimos el éxito a largo plazo</h3>
+            <p>Una rehabilitación no termina el día que se cementa, sino cuando sigue funcionando correctamente años después. Por eso
+            el seguimiento y los controles periódicos forman parte del tratamiento.</p>
+          </article>
+        </div>
+      </section>
+      <section id="especialidades">
+        <h2>Nuestras especialidades</h2>
+        <ul>
+          <li>
+            <img src="cargas_inmediatas.svg" alt="Cargas inmediatas" />
+            <h3>Implantes con prótesis cargadas en el día</h3>
+          </li>
+          <li>
+            <img src="implantes.svg" alt="Implantes" />
+            <h3>Planificación digital de guías quirúrgicos</h3>
+          </li>
+          <li>
+            <img src="Prótesis.svg" alt="Prótesis" />
+            <h3>Coronas, puentes y rehabilitación completa</h3>
+          </li>
+          <li>
+            <img src="carillas.svg" alt="carillas" />
+            <h3>Diseño de sonrisa y estética</h3>
+          </li>
+          <li>
+            <img src="alineadores.svg" alt="alineadores" />
+            <h3>Ortodoncia moderna y discreta</h3>
+          </li>
+          <li>
+            <img src="periodoncia.svg" alt="periodoncia" />
+            <h3>Tratamiento de enciás y mantenimiento</h3>
+          </li>
+          <li>
+            <img src="endodoncia.svg" alt="endodoncia" />
+            <h3>Tratamiento de conducto con rotatoria</h3>
+          </li>
+          <li>
+            <img src="cirugía.svg" alt="cirugía" />
+            <h3>Extracción y cirugía bucal</h3>
+          </li>
+          <li>
+            <img src="atm.svg" alt="atm" />
+            <h3>Disfunción, bruxismo y placas</h3>
+          </li>
+        </ul>
+      </section>
+      <section id="metodosDePago">
+        <h2>Métodos de pago</h2>
+        <ul>
+          <li>
+            <img src="efectivo.svg" alt="Efectivo" />
+            <h3>Efectivo</h3>
+            <p>Tenemos descuentos por pago en efectivo</p>
+          </li>
+          <li>
+            <img src="moneda.svg" alt="moneda" />
+            <h3>Monedas extranjeras</h3>
+            <p>Aceptamos al tipo de cambio del día</p>
+          </li>
+          <li>
+            <img src="transferencia.svg" alt="transferencia" />
+            <h3>Transferencia</h3>
+            <p>Aceptamos transferencias bancarias</p>
+          </li>
+          <li>
+            <img src="billeterasVirtuales.svg" alt="billeteras virtuales" />
+            <h3>Billeteras virtuales</h3>
+            <p>Sumamos Mercado Pago, Cuenta DNI y otras billeteras</p>
+          </li>
+          <li>
+            <img src="tarjetascredito.svg" alt="tarjetas de crédito" />
+            <h3>Tarjetas de crédito</h3>
+            <p>Aceptamos todas las tarjetas de crédito y débito</p>
+          </li>
+        </ul>
+      </section>
+      <section id="opiniones">
+        <h2>Opiniones de nuestros pacientes</h2>
+        <!-- Completar con comentarios de la api de google de rating -->
+      </section>
+      <section id="contacto">
+        <h2>Ubicación y contacto</h2>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.4395023317315!2d-58.453588999999994!3d-34.5623974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e029dbe6b3%3A0x874dbc3ec95be1b!2sCUBA%20DENTAL!5e1!3m2!1ses!2sar!4v1788877257695!5m2!1ses!2sar"
+            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <div>
+            <div>
+              <img src="ubicacion.svg" alt="Ubicación" />
+              <div>
+                <h3>Ubicación</h3>
+                <p>Cuba 1956, PB B, Belgrano</p>
+              </div>
+            </div>
+            <div>
+              <img src="horarios.svg" alt="Horarios" />
+              <div>
+                <h3>Horarios</h3>
+                <p>Lunes a Viernes: 9:00 - 20:00 horas</p>
+              </div>
+            </div>
+            <div>
+              <img src="whatsapp.svg" alt="WhatsApp" />
+              <div>
+                <h3>WhatsApp</h3>
+                <p>011 - 1551326641</p>
+              </div>
+            </div>
+            <div>
+              <img src="instagram.svg" alt="Instagram" />
+              <div>
+                <h3>Seguinos en redes sociales</h3>
+                <p>@cuba.dental</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
